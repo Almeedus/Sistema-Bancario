@@ -2,9 +2,7 @@ from conta import Conta
 
 class ContaCorrente(Conta):
     def __init__(self, agencia, numero_conta):
-        self.AGENCIA = agencia
-        self.NUMERO_CONTA = numero_conta
-        self.SALDO = 0.0
+        super().__init__(agencia, numero_conta)
         self.VALOR_BONUS = 100.0
 
 
