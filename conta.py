@@ -32,4 +32,4 @@ class Conta(abc.ABC):
 
     @abc.abstractmethod
     def extrato(self):
-        print(f'Saldo atual: R${self.SALDO:.2f}')
+        print(f'Saldo atual: R${self.SALDO:.2f}\n')
