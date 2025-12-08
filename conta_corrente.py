@@ -32,7 +32,7 @@ class ContaCorrente(Conta):
         print(f"Sacado: R${valor_original:.2f}")
 
 
-    def extrato(self):
+    def extrato(self) -> None:
         print(f'Valor bonus: R${self.VALOR_BONUS:.2f}',end=' | ')
         print(f'Saldo atual: R${self.SALDO:.2f}\n')
         print('='*20)

@@ -31,5 +31,5 @@ class Conta(abc.ABC):
         return f'Depositado: R${valor:.2f}'
 
     @abc.abstractmethod
-    def extrato(self):
+    def extrato(self) -> None:
         print(f'Saldo atual: R${self.SALDO:.2f}\n')

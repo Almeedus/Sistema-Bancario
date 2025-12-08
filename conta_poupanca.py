@@ -7,5 +7,5 @@ class ContaPoupanca(Conta):
     def sacar(self, valor) -> str:
         return super().sacar(valor)
     
-    def extrato(self):
+    def extrato(self) -> None:
         return super().extrato()
