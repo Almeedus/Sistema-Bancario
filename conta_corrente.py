@@ -6,7 +6,7 @@ class ContaCorrente(Conta):
         self.VALOR_BONUS = 100.0
 
 
-    def sacar(self, valor: float) -> str:
+    def sacar(self, valor: float) -> None:
         if not isinstance(valor, (int, float)):
             raise ValueError("O valor do saque deve ser numérico.")
 
