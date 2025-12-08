@@ -1,7 +1,7 @@
 from conta import Conta
 
 class ContaCorrente(Conta):
-    def __init__(self, agencia, numero_conta):
+    def __init__(self, agencia: int, numero_conta: int):
         super().__init__(agencia, numero_conta)
         self.VALOR_BONUS = 100.0
 

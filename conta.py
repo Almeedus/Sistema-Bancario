@@ -1,7 +1,7 @@
 import abc
 
 class Conta(abc.ABC):   
-    def __init__(self, agencia, numero_conta):
+    def __init__(self, agencia: int, numero_conta: int):
         self.AGENCIA = agencia
         self.NUMERO_CONTA = numero_conta
         self.SALDO = 0.0
