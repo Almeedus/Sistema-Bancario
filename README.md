@@ -28,7 +28,7 @@ O objetivo é criar um mini-sistema onde **clientes** utilizam **contas bancári
 
 ### **Classes Base (Abstração)**
 
-#### `Pessoa` (Classe Abstrata)
+#### `Pessoa`
 - Atributos:
   - `nome`
   - `idade`
