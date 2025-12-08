@@ -7,7 +7,7 @@ class Conta(abc.ABC):
         self.SALDO = 0.0
 
     @abc.abstractmethod    
-    def sacar(self, valor: float):
+    def sacar(self, valor: float) -> str:
         if not isinstance(valor, (int, float)):
             raise ValueError("O valor do saque deve ser numérico.")
 
@@ -20,7 +20,7 @@ class Conta(abc.ABC):
         self.SALDO -= valor
         return f'Sacado: R${valor:.2f}'
 
-    def depositar(self, valor: float):
+    def depositar(self, valor: float) -> str:
         if not isinstance(valor, (int, float)):
             raise ValueError("O valor do depósito deve ser numérico.")
 
