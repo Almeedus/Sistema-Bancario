@@ -1,8 +1,9 @@
 from pessoa import Pessoa
+from conta import Conta
 
 class Cliente(Pessoa):
     def __init__(self, nome: str, idade: int) -> None:
         super().__init__(nome, idade)
-        self.conta = None
+        self.conta: Conta | None = None
 
 
