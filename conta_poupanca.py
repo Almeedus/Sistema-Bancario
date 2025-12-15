@@ -9,3 +9,8 @@ class ContaPoupanca(Conta):
     
     def extrato(self) -> None:
         return super().extrato()
+
+    def __repr__(self) -> str:
+        class_name = type(self).__name__
+        attrs = f'({self.AGENCIA!r}, {self.NUMERO_CONTA!r}, {self.SALDO!r})'
+        return f'{class_name}{attrs}'

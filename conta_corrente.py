@@ -36,3 +36,8 @@ class ContaCorrente(Conta):
         print(f'Valor bonus: R${self.VALOR_BONUS:.2f}',end=' | ')
         print(f'Saldo atual: R${self.SALDO:.2f}\n')
         print('='*20)
+
+    def __repr__(self) -> str:
+        class_name = type(self).__name__
+        attrs = f'({self.AGENCIA!r}, {self.NUMERO_CONTA!r}, {self.SALDO!r}, {self.VALOR_BONUS})'
+        return f'{class_name}{attrs}'
